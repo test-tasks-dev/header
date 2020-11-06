@@ -1,0 +1,17 @@
+mixin main-nav()
+  include main-nav.data.pug
+
+  nav.main-nav
+    .main-nav__search
+      button.main-nav__search-button
+        img.main-nav__search-icon(src='../../components/main-nav/img/search.png', alt='Поиск')
+
+    ul.main-nav__list
+      each item in mainMenu
+        +main-nav-item(item.name, item.url)
+
+    .main-nav__sale Распродажа
+
+mixin main-nav-item(text, url)
+  li.main-nav__list-item
+    a.main-nav__list-item-link(href=url)= text

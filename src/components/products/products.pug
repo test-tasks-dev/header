@@ -1,0 +1,15 @@
+mixin products()
+  -
+    const images = [
+      '../../components/products/img/product1.png',
+      '../../components/products/img/product2.png',
+      '../../components/products/img/product3.png'
+    ];
+
+  ul.products
+    each image in images
+      +products-item(image)
+
+mixin products-item(icon)
+  li.products__item
+    img.products__icon(src=icon, alt='Продукт')

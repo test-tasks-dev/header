@@ -1,0 +1,22 @@
+.header-nav {
+
+  &__list {
+    display: flex;
+    width: 632px;
+    padding: 0;
+    margin: -5px 0 0 0;
+    justify-content: space-between;
+    list-style: none;
+  }
+
+  &__item {
+
+  }
+
+  &__link {
+    font-size: 12px;
+    font-family: inherit;
+    color: #000;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,52 @@
+.info {
+  width: 190px;
+
+  &__time,
+  &__phone,
+  &__region {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  &__time {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  &__phone {
+    padding-bottom: 13px;
+    border-bottom: 1px solid #d7d7d7;
+  }
+
+  &__phone-link {
+    font-size: 25px;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+  }
+
+  &__region {
+    display: flex;
+    padding-top: 3px;
+    justify-content: space-between;
+    font-size: 12px;
+
+    span:last-child {
+      position: relative;
+      border-bottom: 1px dotted #000;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 5px;
+        left: -11px;
+        width: 8px;
+        height: 8px;
+        background-image: url(img/arrow.svg);
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}

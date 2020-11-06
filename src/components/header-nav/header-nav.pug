@@ -1,0 +1,11 @@
+mixin header-nav()
+  include header-nav.data.pug
+
+  .nav.header-nav
+    ul.header-nav__list
+      each item in nav
+        +header-nav-item(item.name, item.url)
+
+mixin header-nav-item(text, url)
+  li.header-nav__item
+    a.header-nav__link(href=url)= text

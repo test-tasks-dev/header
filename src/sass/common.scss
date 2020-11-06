@@ -1,0 +1,19 @@
+html, body {
+  height: 100%;
+}
+
+.container {
+  width: 1170px;
+  margin: auto;
+}
+
+.logo-wrapper {
+  margin-right: 30px;
+}
+
+.header-nav-wrapper {
+  display: flex;
+  margin-bottom: 21px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #d7d7d7;
+}

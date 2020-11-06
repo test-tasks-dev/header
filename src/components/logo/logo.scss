@@ -1,0 +1,15 @@
+.logo {
+
+  &__icon {
+    margin-bottom: 6px;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 12px;
+    font-family: HeliosCondBold, Arial, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .6px;
+  }
+}

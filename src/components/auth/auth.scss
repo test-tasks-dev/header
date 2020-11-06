@@ -1,0 +1,36 @@
+.auth {
+  display: flex;
+  padding: 0;
+  margin: -5px 0 0 auto;
+  list-style: none;
+
+  &__item {
+
+    &:first-child {
+      padding-right: 16px;
+      position: relative;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 8px;
+        right: 0;
+        display: block;
+        width: 2px;
+        height: 11px;
+        background-color: #000;
+      }
+    }
+
+    &:last-child {
+      padding-left: 12px;
+    }
+  }
+
+  &__link {
+    font-size: 12px;
+    font-family: inherit;
+    text-decoration: none;
+    color: #000;
+  }
+}
